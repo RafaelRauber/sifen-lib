@@ -25,7 +25,7 @@ import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.soap.*;
+import jakarta.xml.soap.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
@@ -250,8 +250,6 @@ public class DocumentoElectronico extends SifenObjectBase {
         SOAPElement DE = rDE.addChildElement("DE");
         DE.setAttribute("Id", this.getId());
         Attr idAttribute = DE.getAttributeNode("Id");
-        System.out.println("idAttribute: " + idAttribute.getName() + " - " + idAttribute.getValue());
-        //DE.setAttribute("Id", idAttribute.getValue());
         DE.setIdAttributeNode(idAttribute, true);
 
         DE.addChildElement("dDVId").setTextContent(this.getdDVId());

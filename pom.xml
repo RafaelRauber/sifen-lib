@@ -12,6 +12,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.soap</groupId>
+            <artifactId>jakarta.xml.soap-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
